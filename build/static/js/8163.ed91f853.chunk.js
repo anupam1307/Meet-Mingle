@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvideochat=self.webpackChunkvideochat||[]).push([[8163],{48163:function(e,n,t){t.r(n),t.d(n,{default:function(){return c}});t(72791);var u=t(80184);function c(){return(0,u.jsx)(u.Fragment,{})}}}]);
+//# sourceMappingURL=8163.ed91f853.chunk.js.map
