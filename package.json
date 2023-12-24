@@ -2,7 +2,7 @@
   "name": "videochat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://meet-mingle.vercel.app/",
   "dependencies": {
     "@elastic/datemath": "^5.0.3",
     "@elastic/eui": "^90.0.0",
