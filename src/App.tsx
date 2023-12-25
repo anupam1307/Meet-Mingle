@@ -14,6 +14,7 @@ import VideoConference from './pages/VideoConference';
 import MyMeetings from './pages/MyMeetings';
 import Meetings from './pages/Meetings';
 import JoinMeeting from './pages/JoinMeeting';
+import './assets/responsive.css'
 
 
 function App() {

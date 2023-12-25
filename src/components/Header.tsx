@@ -45,11 +45,11 @@ function Header() {
         {
         items:[
             <Link to="/">
-                <EuiText>
-                    <h2 style={{padding:"0 1vw"}}>
-                        <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
-                    </h2>
-                </EuiText>
+                <img src='<a href="https://www.flaticon.com/free-icons/movie-camera" title="movie camera icons">Movie camera icons created by Freepik - Flaticon</a>' 
+                alt="MeetMingle Logo" 
+                style={{ width: '50px', height: '50px', marginRight: '10px' }}>
+                    
+                </img>
             </Link>,
         ],
     },
@@ -58,10 +58,10 @@ function Header() {
             <>
                 { username?(
                     <EuiText>
-                        <h3>
+                        <div className='UserName'>
                             <EuiTextColor color="white">Hello,</EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
-                        </h3>
+                        </div>
                     </EuiText>
                 ):null}
             </>,
@@ -119,26 +119,26 @@ function Header() {
             </Link>,
         ],
     },
-    {
-        items:[
-            <Link to="/">
-                <EuiText>
-                    <h2 style={{padding:"0 1vw"}}>
-                        <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
-                    </h2>
-                </EuiText>
-            </Link>,
-        ],
-    },
+    // {
+    //     items:[
+    //         <Link to="/">
+    //             <EuiText>
+    //                 <h2 style={{padding:"0 1vw"}}>
+    //                     <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
+    //                 </h2>
+    //             </EuiText>
+    //         </Link>,
+    //     ],
+    // },
     {
         items:[
             <>
                 { username?(
                     <EuiText>
-                        <h3>
+                        <div className='UserName'>
                             <EuiTextColor color="white">Hello,</EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
-                        </h3>
+                        </div>
                     </EuiText>
                 ):null}
             </>,
@@ -194,7 +194,7 @@ function Header() {
   return (
   <>
   <EuiHeader
-      style={{minHeight: "8vh"}} 
+      style={{minHeight: "8vh", width:"100vw",overflow:"hidden"}} 
       theme='dark' 
       sections={isResponsive ? responsiveSection: section} 
 
