@@ -7,6 +7,7 @@ import { signOut } from 'firebase/auth';
 import { firebaseAuth } from '../utils/FirebaseConfig';
 import { changeTheme } from '../app/slices/AuthSlice';
 import { getCreateMeetingBreadCrumbs, getMeetingsBreadcrumbs, getMyMeetingsBreadcrumbs, getOneonOneMeetingBreadCrumbs, getVideoConferenceBreadCrumbs } from '../utils/breadCrumbs';
+import logo from "./Themes/meet.png";
 
 function Header() {
     const navigate = useNavigate();
@@ -45,10 +46,9 @@ function Header() {
         {
         items:[
             <Link to="/">
-                <img src='<a href="https://www.flaticon.com/free-icons/movie-camera" title="movie camera icons">Movie camera icons created by Freepik - Flaticon</a>' 
+                <img src={logo}
                 alt="MeetMingle Logo" 
                 style={{ width: '50px', height: '50px', marginRight: '10px' }}>
-
                 </img>
             </Link>,
         ],
@@ -111,7 +111,7 @@ function Header() {
     const responsiveSection = [{
         items:[
             <Link to="/">
-                <img src='<a href="https://www.flaticon.com/free-icons/movie-camera" title="movie camera icons">Movie camera icons created by Freepik - Flaticon</a>' 
+                <img src={logo}
                     alt="MeetMingle Logo" 
                     style={{ width: '50px', height: '50px', marginRight: '10px' }}>        
                 </img>
