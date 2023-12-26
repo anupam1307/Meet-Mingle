@@ -7,7 +7,7 @@ import { signOut } from 'firebase/auth';
 import { firebaseAuth } from '../utils/FirebaseConfig';
 import { changeTheme } from '../app/slices/AuthSlice';
 import { getCreateMeetingBreadCrumbs, getMeetingsBreadcrumbs, getMyMeetingsBreadcrumbs, getOneonOneMeetingBreadCrumbs, getVideoConferenceBreadCrumbs } from '../utils/breadCrumbs';
-import logo from "./Themes/met center.png";
+import logo from "./Themes/ct2.png";
 
 function Header() {
     const navigate = useNavigate();
@@ -48,7 +48,7 @@ function Header() {
             <Link to="/">
                 <img src={logo}
                 alt="MeetMingle Logo" 
-                style={{ width: '80px', height: '40px', marginRight: '10px' }}>
+                style={{ width: '90px', height: '62px', marginRight: '10px' }}>
                 </img>
             </Link>,
         ],
@@ -59,7 +59,7 @@ function Header() {
                 { username?(
                     <EuiText>
                         <div className='UserName'>
-                            <EuiTextColor color="white">Namaste 👏</EuiTextColor>
+                            <EuiTextColor color="white">Namaste 🙏🏻</EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
                         </div>
                     </EuiText>
@@ -113,7 +113,7 @@ function Header() {
             <Link to="/">
                 <img src={logo}
                     alt="MeetMingle Logo" 
-                    style={{ width: '50px', height: '50px', marginRight: '10px' }}>        
+                    style={{ width: '90px', height: '60px', marginRight: '10px' }}>        
                 </img>
             </Link>,
             // <Link to="/">
@@ -144,7 +144,7 @@ function Header() {
                 { username?(
                     <EuiText>
                         <div className='UserName'>
-                            <EuiTextColor color="white">Namaste 👏 </EuiTextColor>
+                            <EuiTextColor color="white">Namaste 🙏🏻 </EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
                         </div>
                     </EuiText>
