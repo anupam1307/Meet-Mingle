@@ -144,7 +144,7 @@ function Header() {
                 { username?(
                     <EuiText>
                         <div className='UserName'>
-                            <EuiTextColor color="white">Hello, </EuiTextColor>
+                            <EuiTextColor color="white">Namaste 👏 </EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
                         </div>
                     </EuiText>
