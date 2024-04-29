@@ -7,6 +7,7 @@ import { signOut } from 'firebase/auth';
 import { firebaseAuth } from '../utils/FirebaseConfig';
 import { changeTheme } from '../app/slices/AuthSlice';
 import { getCreateMeetingBreadCrumbs, getMeetingsBreadcrumbs, getMyMeetingsBreadcrumbs, getOneonOneMeetingBreadCrumbs, getVideoConferenceBreadCrumbs } from '../utils/breadCrumbs';
+import logo from "./Themes/ct2.png";
 
 function Header() {
     const navigate = useNavigate();
@@ -45,11 +46,10 @@ function Header() {
         {
         items:[
             <Link to="/">
-                <EuiText>
-                    <h2 style={{padding:"0 1vw"}}>
-                        <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
-                    </h2>
-                </EuiText>
+                <img src={logo}
+                alt="MeetMingle Logo" 
+                style={{ width: '90px', height: '62px', marginRight: '10px' }}>
+                </img>
             </Link>,
         ],
     },
@@ -58,10 +58,10 @@ function Header() {
             <>
                 { username?(
                     <EuiText>
-                        <h3>
-                            <EuiTextColor color="white">Hello,</EuiTextColor>
+                        <div className='UserName'>
+                            <EuiTextColor color="white">Hello ,</EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
-                        </h3>
+                        </div>
                     </EuiText>
                 ):null}
             </>,
@@ -111,34 +111,42 @@ function Header() {
     const responsiveSection = [{
         items:[
             <Link to="/">
-                <EuiText>
-                    <h2 style={{padding:"0 1vw"}}>
-                        <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
-                    </h2>
-                </EuiText>
+                <img src={logo}
+                    alt="MeetMingle Logo" 
+                    style={{ width: '90px', height: '60px', marginRight: '10px' }}>        
+                </img>
             </Link>,
+            // <Link to="/">
+            //     <EuiText>
+            //         <h2 style={{padding:"0 1vw"}}>
+            //             <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
+            //         </h2>
+            //     </EuiText>
+            // </Link>,
+                  
+      
         ],
     },
-    {
-        items:[
-            <Link to="/">
-                <EuiText>
-                    <h2 style={{padding:"0 1vw"}}>
-                        <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
-                    </h2>
-                </EuiText>
-            </Link>,
-        ],
-    },
+    // {
+    //     items:[
+    //         <Link to="/">
+    //             <EuiText>
+    //                 <h2 style={{padding:"0 1vw"}}>
+    //                     <EuiTextColor color = "#0b5cff">MeetMingle</EuiTextColor>
+    //                 </h2>
+    //             </EuiText>
+    //         </Link>,
+    //     ],
+    // },
     {
         items:[
             <>
                 { username?(
                     <EuiText>
-                        <h3>
-                            <EuiTextColor color="white">Hello,</EuiTextColor>
+                        <div className='UserName'>
+                            <EuiTextColor color="white">Hello ,</EuiTextColor>
                             <EuiTextColor color="#0b5cff">{username}</EuiTextColor>
-                        </h3>
+                        </div>
                     </EuiText>
                 ):null}
             </>,
@@ -194,7 +202,7 @@ function Header() {
   return (
   <>
   <EuiHeader
-      style={{minHeight: "8vh"}} 
+      style={{minHeight: "8vh", width:"100vw",overflow:"hidden"}} 
       theme='dark' 
       sections={isResponsive ? responsiveSection: section} 
 

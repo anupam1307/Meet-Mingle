@@ -1,0 +1,18 @@
+.UserName{
+  font-size: 1.5rem;
+}
+.loginpage{
+  font-size: 1.9rem;
+}
+.center-image {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh;            
+}
+
+@media (max-width: 768px) {
+  .UserName {
+    font-size:1rem ;
+  }
+}

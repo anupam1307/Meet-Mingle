@@ -7,13 +7,15 @@ import { useAppDispatch, useAppSelector } from './app/hooks';
 import ThemeSelector from './components/ThemeSelector';
 import CreateMeeting from './pages/CreateMeeting';
 import OneOnOneMeeting from './pages/OneOnOneMeeting';
-import '@elastic/eui/dist/eui_theme_light.css';
+// import '@elastic/eui/dist/eui_theme_light.css';
+// import '@elastic/eui/dist/eui_theme_dark.css';
 import { EuiGlobalToastList } from "@elastic/eui";
 import { setToasts } from './app/slices/MeetingSlice';
 import VideoConference from './pages/VideoConference';
 import MyMeetings from './pages/MyMeetings';
 import Meetings from './pages/Meetings';
 import JoinMeeting from './pages/JoinMeeting';
+import './assets/responsive.css'
 
 
 function App() {
