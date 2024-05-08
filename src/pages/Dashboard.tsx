@@ -49,7 +49,7 @@ const Dashboard = () => {
         <EuiFlexItem>
           <EuiCard  
         icon={<EuiImage size="5rem" alt="icon" src={dashboard3} />}
-        title={" Schedule Meetings"}
+        title={" Scheduled Meetings"}
         description="View the meetings that you are invited to."
         onClick={() => navigate('/meetings')}
         paddingSize='xl'
